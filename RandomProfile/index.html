@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random User Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1><i class="fas fa-user"></i>&nbsp;Random User Generator</h1>
+
+      <div id="user-card">
+        <img id="user-img" src="" alt="User Picture" />
+        <h2 id="user-name">Name</h2>
+        <p id="user-email">
+          <i class="fas fa-envelope"></i> <span id="email-text"></span>
+        </p>
+        <p id="user-phone">
+          <i class="fas fa-phone"></i> <span id="phone-text"></span>
+        </p>
+        <p id="user-location">
+          <i class="fas fa-map-marker-alt"></i> <span id="location-text"></span>
+        </p>
+
+        <button id="generate-btn">
+          <i class="fas fa-sync-alt"></i> Generate New User
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #a3ace7, #79b0eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+h1 {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  animation: typing 4s steps(35, end) forwards, blink 0.75s step-end infinite;
+  width: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 24ch }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+
+#user-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+#user-card i{
+    margin-right: 8px;
+    color : #ffffff;
+}
+
+button i {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+#user-img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: 400;
+  background: linear-gradient(to right, #39bcf0, #376b86);
+  color: #000;
+  border: 1px solid rgb(18, 71, 150);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #235986, #6097e9);
+  box-shadow: 0 0 10px #fff;
+}
